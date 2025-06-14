@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Drop Rescue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- charity: water branding -->
+  <header>
+    <!-- Use the provided logo image filename -->
+    <img id="logo" src="charity-water-supporter.png" alt="charity: water logo" />
+  </header>
+
+  <!-- start screen -->
+  <div id="start-screen" class="screen">
+    <h1>Water Drop Rescue</h1>
+    <button id="start-btn" class="btn">Start Game</button>
+  </div>
+
+  <!-- live game screen -->
+  <div id="game-screen" class="screen hidden">
+    <div id="scoreboard">
+      <span id="score">Score: 0</span>
+      <span id="lives">Lives: 3</span>
+      <span id="timer">Time: 60s</span>
+    </div>
+    <div id="game-area"></div>
+  </div>
+
+  <!-- end screen -->
+  <div id="end-screen" class="screen hidden">
+    <h2 id="end-message">Game Over</h2>
+    <p id="final-score"></p>
+    <button id="restart-btn" class="btn">Restart</button>
+  </div>
+
+  <!-- confetti lives here -->
+  <div id="confetti-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
